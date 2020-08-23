@@ -10,7 +10,7 @@ const cheerio = require('cheerio');
 const request = require('request');
 
 
-bot.login(botConfig.token);
+bot.login(process.env.token);
 
 bot.on("ready", async () => {
 
